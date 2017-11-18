@@ -1,0 +1,55 @@
+{
+    "titles": {
+        "percival": [ "Parsifal", "zna Merlina" ],
+        "morgana": [ "Morgana", "podszywa się pod Merlina" ],
+        "mordred": [ "Mordred", "nie ujawnia się Merlinowi" ],
+        "oberon": [ "Oberon", "nie ujawnia się Złym" ],
+        "lancelot": "Lancelot",
+        "lancelot2": "Obaj Lanceloci poznają się",
+        "warnings": [ "Przypomnienia", "przypominaj o regułach ujawniania się postaci dodatkowych" ]
+    },
+    "dialogs": {
+        "all": {
+            "warning": "Przypomnienie dla wszystkich",
+            "wake-up": "Wszyscy gracze, otwórzcie oczy"
+        },
+        "minions": {
+            "wake-up": "Poplecznicy Mordreda, otwórzcie oczy i poznajcie się nawzajem",
+            "sleep": "Poplecznicy Mordreda, zamknijcie oczy",
+            "reveal": "Wszyscy agenci Zła, wystawcie kciuki dla Merlina, żeby mógł was poznać",
+            "hide": "Agenci Zła, schowajcie kciuki"
+        },
+        "mordred": {
+            "warning": "Mordred nie wystawia kciuka dla Merlina",
+            "wake-up": "Mordredzie, razem ze swoimi Poplecznikami otwórzcie oczy i poznajcie się nawzajem",
+            "sleep": "Mordredzie, razem ze swoimi Poplecznikami zamknijcie oczy",
+            "no-reveal": "Mordredzie, nie wystawiaj kciuka. Nie chcemy, żeby Merlinowi było za łatwo.."
+        },
+        "merlin": {
+            "wake-up": "Merlinie, otwórz oczy i znajdź wszystkich agentów Zła",
+            "reveal": "Merlinie, wystaw kciuk dla Parsifala",
+            "hide": "Merlinie, schowaj kciuk",
+            "sleep": "Merlinie, zamknij oczy"
+        },
+        "percival": {
+            "wake-up": "Parsifalu, otwórz oczy i znajdź Merlina",
+            "wake-up2": "Parsifalu, otwórz oczy i znajdź Merlina i Morganę",
+            "sleep": "Parsifalu, zamknij oczy"
+        },
+        "morgana": {
+            "warning": "Morgana jest jednym z Popleczników Mordreda",
+            "reveal": "Merlinie i Morgano, wystawcie kciuki dla Parsifala",
+            "hide": "Merlinie i Morgano, schowajcie kciuki"
+        },
+        "oberon": {
+            "warning": "Oberon nie otwiera oczu z innymi agentami Zła",
+            "reveal": "Oberonie, ty też"
+        },
+        "lancelot": {
+            "warning": "Zły Lancelot nie otwiera oczu razem z innymi agentami Zła, ale pokazuje im kciuka",
+            "wake-up": "Dobry i Zły Lancelocie, otwórzcie oczy i poznajcie się nawzajem",
+            "sleep": "Dobry i Zły Lancelocie, zamknijcie oczy",
+            "reveal": "Zły Lancelocie, wystaw kciuk, żeby Poplecznicy Mordreda mogli cię poznać"
+        }
+    }
+}

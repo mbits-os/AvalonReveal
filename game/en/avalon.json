@@ -1,0 +1,55 @@
+{
+    "titles": {
+        "percival": [ "Percival", "knows Merlin" ],
+        "morgana": [ "Morgana", "appears as Merlin" ],
+        "mordred": [ "Mordred", "unknown to Merlin" ],
+        "oberon": [ "Oberon", "unknown to Evil" ],
+        "lancelot": "Lancelot",
+        "lancelot2": "Both Lancelots learn about each other",
+        "warnings": [ "Reminders", "remind about rules of unveiling the additional characters" ]
+    },
+    "dialogs": {
+        "all": {
+            "warning": "To remind everybody",
+            "wake-up": "Everybody, open your eyes"
+        },
+        "minions": {
+            "wake-up": "Minions of Mordred, open your eyes to learn about each other",
+            "sleep": "Minions of Mordred, close your eyes",
+            "reveal": "All agents of Evil, raise your thumbs for the Merlin, so he can find you",
+            "hide": "Agents of Evil, put your thumbs down"
+        },
+        "mordred": {
+            "warning": "Mordred does not raise his thumb for Merlin",
+            "wake-up": "Mordred, together with your Minions open your eyes to learn about each other",
+            "sleep": "Mordred, together with your Minions close your eyes",
+            "no-reveal": "Mordred, do not raise your thumb. We do not want to make thing easy for Merlin.."
+        },
+        "merlin": {
+            "wake-up": "Merlin, open your eyes and look for all the Minions",
+            "reveal": "Merlin, raise your thumb for Percival",
+            "hide": "Merlin, put your thumb down",
+            "sleep": "Merlin, close your eyes"
+        },
+        "percival": {
+            "wake-up": "Percival, open your eyes and look for the Merlin",
+            "wake-up2": "Percival, open your eyes and look for the Merlin and Morgana",
+            "sleep": "Percival, close your eyes"
+        },
+        "morgana": {
+            "warning": "Morgana is a Minion of Mordred",
+            "reveal": "Merlin and Morgana, raise your thumbs for Percival",
+            "hide": "Merlin and Morgana, put your thumbs down"
+        },
+        "oberon": {
+            "warning": "Oberon does not open his eyes with other agents of Evil",
+            "reveal": "Oberon, that means you as well"
+        },
+        "lancelot": {
+            "warning": "Evil Lancelot does not open his eyes with other agents of Evil, but raises his thumb for them",
+            "wake-up": "Good and Evil Lancelot, open your eyes and learn about each other",
+            "sleep": "Good and Evil Lancelot, close your eyes",
+            "reveal": "Evil Lancelot, raise your thumb, so other Minions can learn about your existence"
+        }
+    }
+}

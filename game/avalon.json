@@ -1,0 +1,60 @@
+{
+	"langs": ["pl", "en"],
+    "base": [
+        "40:minions:wake-up",
+        "50:minions:sleep",
+        "60:minions:reveal",
+        "90:merlin:wake-up",
+        "100:merlin:sleep",
+        "110:minions:hide",
+        "160:all:wake-up"
+    ],
+    "groups": [
+        10, 30, 60, 120, 160
+    ],
+    "dialogs": {
+        "percival": [
+            "120:merlin:reveal",
+            "130:percival:wake-up",
+            "140:percival:sleep",
+            "150:merlin:hide"
+        ],
+        "morgana": [
+            "0:all:warning",
+            "2:morgana:warning",
+            "120:morgana:reveal",
+            "130:percival:wake-up2",
+            "150:morgana:hide"
+        ],
+        "mordred": [
+            "0:all:warning",
+            "3:mordred:warning",
+            "40:mordred:wake-up",
+            "50:mordred:sleep",
+            "80:mordred:no-reveal"
+        ],
+        "oberon": [
+            "0:all:warning",
+            "1:oberon:warning",
+            "70:oberon:reveal"
+        ],
+        "lancelot": [
+            "0:all:warning",
+            "4:lancelot:warning",
+            "30:lancelot:reveal"
+        ],
+        "lancelot2": [
+            "10:lancelot:wake-up",
+            "20:lancelot:sleep"
+        ]
+    },
+    "presets": {
+        "basic": ["warnings"],
+        "percival": ["warnings"],
+        "percival_morgana": ["warnings", "percival", "morgana"]
+    },
+    "dependency": {
+        "morgana": "percival",
+        "lancelot2": "lancelot"
+    }
+}

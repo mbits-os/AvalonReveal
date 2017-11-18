@@ -53,3 +53,15 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+*.pyc
+.game
+
+android/app/src/main/java/com/midnightbits/avalonreveal/avalon/G.java
+android/app/src/main/java/com/midnightbits/avalonreveal/avalon/ActorUtils.java
+android/app/src/main/java/com/midnightbits/avalonreveal/avalon/DialogUtils.java
+android/app/src/main/res/drawable/ic_avatar_*.png
+android/app/src/main/res/raw/dialogue_*.mp3
+android/app/src/main/res/raw-*/dialogue_*.mp3
+android/app/src/main/res/values/avalon.xml
+android/app/src/main/res/values-*/avalon.xml
