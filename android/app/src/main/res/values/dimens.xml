@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_title">24sp</dimen>
+    <dimen name="card_text">18sp</dimen>
+
+    <dimen name="action_text_margin">4dp</dimen>
+    <dimen name="action_title_margin">8dp</dimen>
+    <dimen name="action_avatar_space">39dp</dimen>
+
+    <dimen name="dense_icon">24dp</dimen>
+    <dimen name="dense_icon_left">0dp</dimen>
+    <dimen name="dense_icon_top">6dp</dimen>
+    <dimen name="dense_icon_minheight">36dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="icon">44dp</dimen>
+    <dimen name="icon_minheight">72dp</dimen>
+    <dimen name="icon_left">16dp</dimen>
+    <dimen name="list_image_space">72dp</dimen>
+</resources>

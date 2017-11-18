@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Avalon: Reveal Phase</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_optional_characters">Optional Characters</string>
+    <string name="settings_optional_characters_none">No optional characters selected</string>
+</resources>
