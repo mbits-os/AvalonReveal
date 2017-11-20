@@ -4,9 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.midnightbits.avalonreveal.ui.activity.MainActivity">
     <item
+        android:id="@+id/action_play"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_play"
+        android:title="@string/action_play"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_stop"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_stop"
+        android:title="@string/action_stop"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
         android:id="@+id/action_settings"
         android:checkable="false"
         android:enabled="true"
         android:icon="@drawable/ic_action_settings"
-        android:title="@string/title_activity_settings" />
+        android:title="@string/title_activity_settings"
+        app:showAsAction="ifRoom"/>
 </menu>

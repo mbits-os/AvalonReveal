@@ -181,9 +181,18 @@ public class OptionsRecyclerViewAdapter extends RecyclerView.Adapter<OptionsRecy
     }
 
     @Override
+    public int getItemViewType(int position) {
+        Item item = mItems.get(position);
+        if (item.dialog == G.dialog.warnings) {
+            return R.layout.fragment_options_item_tool;
+        }
+        return R.layout.fragment_options_item;
+    }
+
+    @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_options_item, parent, false);
+                .inflate(viewType, parent, false);
         return new ViewHolder(view);
     }
 
@@ -193,6 +202,11 @@ public class OptionsRecyclerViewAdapter extends RecyclerView.Adapter<OptionsRecy
         if (holder.mAvatarView != null) {
             holder.mAvatarView.setImageResource(holder.mItem.avatar());
             holder.mAvatarView.setEnabled(holder.mItem.enabled);
+        }
+        if (holder.mToolView != null) {
+            if (holder.mItem.dialog == G.dialog.warnings)
+                holder.mToolView.setImageResource(R.drawable.ic_warnings_switch);
+            holder.mToolView.setEnabled(holder.mItem.enabled);
         }
 
         holder.mTitleView.setText(holder.mItem.title);
@@ -246,6 +260,7 @@ public class OptionsRecyclerViewAdapter extends RecyclerView.Adapter<OptionsRecy
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         final View mView;
+        final ImageView mToolView;
         final ImageView mAvatarView;
         final TextView mTitleView;
         final TextView mSubtitleView;
@@ -255,6 +270,7 @@ public class OptionsRecyclerViewAdapter extends RecyclerView.Adapter<OptionsRecy
         ViewHolder(View view) {
             super(view);
             mView = view;
+            mToolView = view.findViewById(R.id.tool_icon);
             mAvatarView = view.findViewById(R.id.avatar);
             mTitleView = view.findViewById(R.id.title);
             mSubtitleView = view.findViewById(R.id.subtitle);

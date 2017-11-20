@@ -14,7 +14,9 @@
     <dimen name="dense_icon_minheight">36dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="icon">44dp</dimen>
+    <dimen name="icon_tool">24dp</dimen>
     <dimen name="icon_minheight">72dp</dimen>
     <dimen name="icon_left">16dp</dimen>
+    <dimen name="icon_tool_left">26dp</dimen>
     <dimen name="list_image_space">72dp</dimen>
 </resources>

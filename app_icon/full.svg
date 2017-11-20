@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+
+<svg
+   xmlns:svg='http://www.w3.org/2000/svg'
+   xmlns:xlink='http://www.w3.org/1999/xlink'
+   xmlns='http://www.w3.org/2000/svg'
+   version='1.1'
+   width='480pt'
+   height='480pt'
+   viewBox='0 0 120 120'>
+<defs>
+    <path id='shield' d='M60,15
+        C50,25 40,25 25,25
+        C20,60 35,95 60,100
+        C85,95 100,60 95,25
+        C80,25 70,25 60,15
+        z'/>
+
+    <clipPath id='clip'>
+        <use xlink:href='#shield' />
+    </clipPath>
+
+    <mask id='top-glow'>
+        <rect width='100%' height='100%' fill='white'/>
+        <use xlink:href='#shield' transform='translate(0, 4)' fill='black'/>
+    </mask>
+
+    <mask id='bottom-shadow'>
+        <rect width='100%' height='100%' fill='white'/>
+        <use xlink:href='#shield' transform='translate(0, -4)' fill='black'/>
+    </mask>
+
+    <radialGradient id='light'
+        gradientUnits='userSpaceOnUse'
+        fx='85' fy='42' cx='85' cy='42' r='70'>
+        <stop offset='0%' stop-color='black' stop-opacity='0'/>
+        <stop offset='100%' stop-color='black' stop-opacity='0.3' />
+    </radialGradient>
+
+    <linearGradient id='cast'
+        gradientUnits='userSpaceOnUse'
+        x1='60' y1='60' x2='120' y2='120'>
+        <stop offset='32%' stop-color='black' stop-opacity='0.15'/>
+        <stop offset='62%' stop-color='black' stop-opacity='0.02' />
+        <stop offset='100%' stop-color='black' stop-opacity='0.00' />
+    </linearGradient>
+
+    <filter id='contact'>
+      <feGaussianBlur in='SourceAlpha' stdDeviation='4' result='blur'/>
+      <feFlood flood-color='black' flood-opacity='.2' result='shade'/>
+      <feComposite in2='blur' operator='in'/>
+    </filter>
+</defs>
+
+<use xlink:href='#shield' style='fill: black; stroke: none; filter: url(#contact)'
+     transform='translate(0,4)'/>
+<use xlink:href='#shield' style='fill: white; stroke: none;' />
+<g style='fill: #b5413f; stroke: none' clip-path='url(#clip)'>
+    <rect x='50' y='10' width='20' height='100'/>
+    <path d='
+        M-81.42135624,98.57864376
+        A200,200 0,0,1 201.4213562,98.57864376
+        L187.2792206,112.7207794
+        A180,180 0,0,0 -67.27922061,112.7207794
+        z' />
+</g>
+
+<use xlink:href='#shield' style='fill: url(#light); stroke-width: none' />
+<use xlink:href='#shield' style='fill: white; fill-opacity:.2; stroke-width: none' mask='url(#top-glow)' />
+<use xlink:href='#shield' style='fill: black; fill-opacity:.2; stroke-width: none' mask='url(#bottom-shadow)' />
+
+</svg>

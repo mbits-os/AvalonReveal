@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+
+<svg
+   xmlns:svg='http://www.w3.org/2000/svg'
+   xmlns:xlink='http://www.w3.org/1999/xlink'
+   xmlns='http://www.w3.org/2000/svg'
+   version='1.1'
+   width='480pt'
+   height='480pt'
+   viewBox='0 0 120 120'>
+
+<rect x='0' y='0' width='120' height='120' style='fill:black' />
+<path id='shield' d='M60,15
+    C50,25 40,25 25,25
+    C20,60 35,95 60,100
+    C85,95 100,60 95,25
+    C80,25 70,25 60,15
+    z' fill='white'/>
+
+</svg>

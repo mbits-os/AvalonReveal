@@ -15,6 +15,8 @@ import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
+    private boolean mPlaying = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        menu.findItem(R.id.action_play).setVisible(!mPlaying);
+        menu.findItem(R.id.action_stop).setVisible(mPlaying);
         return true;
     }
 
@@ -45,6 +49,26 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_play) {
+            playScript();
+            return true;
+        }
+
+        if (id == R.id.action_stop) {
+            stopScript();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    private void playScript() {
+        mPlaying = true;
+        invalidateOptionsMenu();
+    }
+
+    private void stopScript() {
+        mPlaying = false;
+        invalidateOptionsMenu();
     }
 }

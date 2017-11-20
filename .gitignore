@@ -65,3 +65,4 @@ android/app/src/main/res/raw/dialogue_*.mp3
 android/app/src/main/res/raw-*/dialogue_*.mp3
 android/app/src/main/res/values/avalon.xml
 android/app/src/main/res/values-*/avalon.xml
+app_icon/*.png

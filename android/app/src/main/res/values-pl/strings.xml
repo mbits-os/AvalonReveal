@@ -5,4 +5,6 @@
     <string name="action_settings">Ustawienia</string>
     <string name="settings_optional_characters">Postaci dodatkowe</string>
     <string name="settings_optional_characters_none">Nie wybrano żadnych postaci dodatkowych</string>
+    <string name="action_play">Odtwarzaj</string>
+    <string name="action_stop">Stop</string>
 </resources>

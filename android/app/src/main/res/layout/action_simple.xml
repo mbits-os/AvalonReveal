@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:minHeight="@dimen/dense_icon_minheight"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:id="@+id/tool_icon"
+        android:layout_width="@dimen/dense_icon"
+        android:layout_height="@dimen/dense_icon"
+        android:layout_marginStart="@dimen/dense_icon_left"
+        android:layout_marginTop="@dimen/dense_icon_top"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_warnings_bullet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <TextView
         android:id="@+id/content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/action_text_margin"
         android:layout_marginBottom="@dimen/action_text_margin"
@@ -17,6 +30,8 @@
         android:layout_marginEnd="@dimen/card_padding"
         android:textSize="@dimen/card_text"
         android:textStyle="normal"
-        tools:text="@string/dialogs__all__wake_up" />
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae."
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
